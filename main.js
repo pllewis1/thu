@@ -5,7 +5,7 @@ var answer=0;
 
 function dothemath(pass){
 pass.addEventListener("click", function() {
-  num1 = document.getElementById('window').value;
+  num1 = Number(document.getElementById('window').value);
   document.getElementById('window').value = "";
   operator = pass.value;
 });
@@ -37,7 +37,7 @@ dothemath(document.getElementById("times"));
 dothemath(document.getElementById("plus"));
 
 document.getElementById("equals").addEventListener("click", function() {
-  num2 = document.getElementById('window').value;
+  num2 = Number(document.getElementById('window').value);
   if (operator === "/") {
     answer = num1/num2;
   }
@@ -51,6 +51,8 @@ document.getElementById("equals").addEventListener("click", function() {
     answer = num1+num2;
   }
   document.getElementById('window').value=answer;
+
+console.log(num1, num2)
 })
   document.getElementById("clear").addEventListener("click", function(){
   document.getElementById('window').value = "";
