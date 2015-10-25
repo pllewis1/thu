@@ -48,7 +48,7 @@ document.getElementById("equals").addEventListener("click", function() {
     answer = num1-num2;
   }
   else if (operator === "+") {
-    answer = num1+num2;z
+    answer = num1+num2;
   }
   document.getElementById('window').value=answer;
 })
