@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
     <meta charset="utf-8">
-    <title>Calculator HW</title>
+    <title>Weekend Calculator</title>
   </head>
   <body>
-    <section class="calculator">
+    <main>
+    <div id="calc"class="calc">
 
-      <h3>Let's Do Some Math!</h3>
+      <input id="clear" type="button" name="name" value="C">
+      <input id="window" type="text" name="name" value="" disabled="">
+      <input id="num7" type="button" name="name" value="7">
+      <input id="num8" type="button" name="name" value="8">
+      <input id="num9" type="button" name="name" value="9">
+      <input id="divide" class="operator"type="button" name="name" value="/">
+      <input id="num4" type="button" name="name" value="4">
+      <input id="num5" type="button" name="name" value="5">
+      <input id="num6" type="button" name="name" value="6">
+      <input id="times" class="operator" type="button" name="name" value="x">
+      <input id="num1" type="button" name="name" value="1">
+      <input id="num2" type="button" name="name" value="2">
+      <input id="num3" type="button" name="name" value="3">
+      <input id="minus" class="operator" type="button" name="name" value="-">
+      <input id="num0" type="button" name="name" value="0">
+      <input id="dot" type="button" name="name" value=".">
+      <input id="equals" type="button" name="name" value="=">
+      <input id="plus" class="operator" type="button" name="name" value="+">
+    </div>
+  </main>
+  <script type="text/javascript" src="main.js">
 
-      <input class="num" type="text" id="num_one" placeholder="Add sum numbaz"/>
-      <br/><br/>
-      <input class="num" type="text" id="num_two" placeholder="Maths r hard!"/>
-      <br/><br/>
-      <input type="submit" class="submit"value="Calculate" id="calculateBtn" />
-
-      <div class="answer">
-        <br/>
-          Answer: <span id="answer"></span>
-        </div>
-  </section>
-<script type="text/javascript" src="main.js">
-
-</script>
-
+  </script>
   </body>
 </html>
